@@ -2,6 +2,12 @@ from PIL import Image, ImageFont, ImageDraw
 
 
 def text_image(image_path,title_text):
+    '''
+    image_path : path to the original image that we want to modify
+    title_text : the text we want to add to the image
+
+    It returns the None if image path is not Valid else returns the modified image path save in the same directory where original image is located.
+    '''
     try:
         my_image = Image.open(image_path)
     except:
